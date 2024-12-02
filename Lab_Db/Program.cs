@@ -1,7 +1,7 @@
 ﻿using Lab_Db;
 
 MenuOption _option = default;
-IMediaRepository _mediaRepository = new MSSQLMediaRepository("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=medialabDb;Integrated Security=True;Connect Timeout=60;Encrypt=True;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"); //new ListMediaRepository();
+IMediaRepository _mediaRepository = new ListMediaRepository();
 
 while (_option != MenuOption.Exit)
 {
