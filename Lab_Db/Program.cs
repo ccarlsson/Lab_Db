@@ -8,21 +8,22 @@ while (_option != MenuOption.Exit)
     _option = PrintMenu();
     HandleOption(_option);
     Console.WriteLine("Press any key to continue...");
-    Console.ReadKey(true);
+    Console.ReadKey(intercept: true);
     Console.Clear();
 }
 
 #region Menu Methods
 MenuOption PrintMenu()
 {
-    Console.WriteLine("1. Add Movie");
-    Console.WriteLine("2. Add Book");
-    Console.WriteLine("3. List All");
-    Console.WriteLine("4. List Books");
-    Console.WriteLine("5. List Movies");
-    Console.WriteLine("6. Remove Book");
-    Console.WriteLine("7. Remove Movie");
-    Console.WriteLine("8. Exit");
+    Console.WriteLine("Welcome to the Media Library");
+    Console.WriteLine("\t1. Add Movie");
+    Console.WriteLine("\t2. Add Book");
+    Console.WriteLine("\t3. List All");
+    Console.WriteLine("\t4. List Books");
+    Console.WriteLine("\t5. List Movies");
+    Console.WriteLine("\t6. Remove Book");
+    Console.WriteLine("\t7. Remove Movie");
+    Console.WriteLine("\t8. Exit");
     Console.Write("Enter your choice: ");
     while (true)
     {
